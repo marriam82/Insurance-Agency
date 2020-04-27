@@ -1,0 +1,144 @@
+ <div class="FAQ">
+        <div class="FAQ1">
+            <img src="./insurance-images/sep-img1.png" alt="" style="position: absolute;height: 6vh;left:30%;top:3%;">
+            <h1>F.A.Q.</h1>
+            <p>Frequently Asked Questions<br> are here!</p>
+        </div>
+        <div class="FAQ2">
+            
+                <input type="radio" name="faqs" id="faq-content" class="faq-input">
+                <label for="faq-content" class="faq-label" ><p>What is the customer service phone number?</p><i class="fas fa-chevron-down"></i></label>
+                <div class="content content1">
+                    <p style="padding: 4% 2%;line-height: 1.5em;">The Xtra toll-free customer service number is 800-345-678.</p>
+                </div>
+
+                <input type="radio" name="faqs" id="faq-content1" class="faq-input">
+                <label for="faq-content1" class="faq-label"><p>Does my homeowners insurance cover other structures on my property?</p><i class="fas fa-chevron-down"></i></label>
+                <div class="content content1">
+                    <p style="padding: 3% 2%;line-height: 1.5em;">Yes. In addition to your dwelling, XTRA covers other detached structures located on your<br>
+                         property that are separated by clear space from the dwelling. The basic policy covers<br>
+                          other structures at 10% of your dwelling coverage.<br>
+                        This includes, but is not limited to:
+                       <ul>
+                         <li>  Detached garages</li>
+                         <li>Equipment sheds</li>
+                        <li> Barns</li>
+                         <li>Guest cottages</li>
+                       </ul>
+------HTML FAQ-----                    
+
+
+
+
+</p>
+                        <p1 style="padding: 5% 2%;line-height: 5em;"> Contact your agent about insuring other structures on your property.</p1>
+                </div>
+
+                <input type="radio" name="faqs" id="faq-content2" class="faq-input">
+                <label for="faq-content2" class="faq-label"><p>What does a homeowners policy cover?</p><i class="fas fa-chevron-down"></i></label>
+                <div class="content content1">
+                    <p style="padding: 3% 2%;line-height: 1.5em;">the policy provides coverage for your personal property for specific perils including, but not limited to:
+                     <ul style="padding:1% 4%;line-height: 1.7em;">
+                        <li>Fire</li>
+                        <li>Lightning</li>
+                        <li>Windstorm</li>
+                        <li>Hail</li>
+                        <li>Theft</li>
+                     </ul>
+                        </p>
+                </div>
+
+                <input type="radio" name="faqs" id="faq-content3" class="faq-input">
+                <label for="faq-content3" class="faq-label"><p>When does my coverage start?</p><i class="fas fa-chevron-down"></i></label>
+                <div class="content content1">
+                    <p style="padding: 4% 2%;line-height: 1.5em;">Your coverage begins once you receive valid proof of insurance. You can access your<br> proof of insurance online.</p>
+                </div>
+
+                <input type="radio" name="faqs" id="faq-content4" class="faq-input">
+                <label for="faq-content4" class="faq-label"><p>Do I have to pay for an online quote?</p><i class="fas fa-chevron-down"></i></label>
+                <div class="content content1">
+                    <p style="padding: 4% 2%;line-height: 1.5em;">
+                        No. The quote is free.<br>
+                        The quote provides an estimate based on the information you provide and contains<br> descriptions of available coverages.</p>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+----------CSS FAQ-----
+
+.FAQ{
+    width:100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.FAQ1{
+    position: relative;
+}
+.FAQ1 h1{
+    position: relative;
+    font-size: 2em;
+    left: 45%;
+    line-height: 2em;
+    color:#402c77;
+}
+.FAQ1 p{
+    position: relative;
+    font-size: 1em;
+    left: 45%;
+    line-height: 1.5em;
+    color: rgb(93, 93, 95);
+}
+.FAQ2{
+    height:auto;
+    position: relative;
+}
+.faq-input{
+    display: none;
+}
+.faq-label{
+    display:block;
+    height:8vh;
+    width:75%;
+    background: #7BDEA8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin-top: 1vh;
+    color:#402c77;
+    font-weight: bold;
+}
+
+.content{
+    background: white;
+    border: 1px solid grey;
+    height: auto;
+    width:75%;
+    color:rgb(98, 98, 99);
+    display: none;
+    margin-top: 1vh;
+    transition:.85s;
+}
+ul{
+    width: 30%;
+    padding:0 4%;
+    margin-top:-2%;
+    line-height: 1.5em;
+    color:rgb(98, 98, 99);
+}
+.faq-input:checked+label+.content{
+    display: block;
+    margin:0;
+    height: auto;
+}
+.faq-input:checked+label{
+    background: #402c77;
+    color: white;
+    
+}
